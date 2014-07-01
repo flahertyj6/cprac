@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Pet Fishes!</title>
+<script src="./jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="fishprice.js"></script>
+</head>
+<style type="text/css">
+table.buttont{
+position: relative;
+right: -50px;
+border-style: ridge;
+border-color: red;
+}
+body {
+    background-image: url("fishpattern.jpg");
+}
+
+table.carttab{
+position: relative;
+right: -670px;
+top: -295px;
+width: 400px;
+height: 300px;
+border-style: ridge;
+border-color: red;
+}
+h2.shopping{
+color: yellow;
+font-family: Fantasy;
+position: relative;
+right: -740px;
+top: -295px;
+}
+td.longone{
+font-weight:bold;
+width: 40%;
+height : 30px;
+}
+button.button{
+border-radius:25px;
+}
+h1.title{
+color: yellow;
+text-align:center;
+font-family: Fantasy;
+}
+h2.secondary{
+color: yellow;
+position: relative;
+right: -230px;
+font-family: Fantasy;
+}
+td {
+background-color: yellow;
+border-color: yellow;
+border: 1px;
+opacity:0.9;
+}
+td.second{
+height :3px;
+width: 10%;
+text-align: center;
+}
+h3.empty{
+position: absolute;
+right: 330px;
+top: 200px;
+z-index: 2;
+font-family: Papyrus;
+}
+h3.discount{
+color: yellow;
+position: relative;
+right: -674px;
+top: -300px;
+}
+
+</style>
+<body>
+
+<h1 class = 'title'> Frank's Fish Store </h1>
+<h2 class = 'secondary'>Pet Fish</h2>
+<table class = 'buttont'>
+<tr>
+<td class= 'longone'>Guppy</td><td>$1.99</td><td class = 'longone'> <p>Quantity: <input type="text" name="guppy" value="" 
+size="10" id = "guppyquan"/></p></td><td><button class = 'button' id="Guppy"> Add </button></td>
+</tr>
+<tr>
+<td class= 'longone'>Mollie</td><td>$2.99</td><td class = 'longone'><p>Quantity: <input type="text" name="mollie" value="" 
+size="10" id = "molliequan"/></p></td><td><button class = 'button' id="Mollie"> Add </button></td>
+</tr>
+<tr>
+<td class= 'longone'>Angel Fish</td><td>$15.00</td><td class = 'longone'><p>Quantity: <input type="text" name="text" value="" 
+size="10" id = "angelquan"/></p></td><td><button class = 'button' id="Angel"> Add </button></td>
+</tr>
+<tr>
+<td class= 'longone'>GoldFish</td><td>$.99</td><td class = 'longone'><p>Quantity: <input type="text" name="text" value="" 
+size="10" id = "goldquan"/></p></td><td><button class = 'button' id="Gold"> Add </button></td>
+</tr>
+<tr>
+<td class= 'longone'>Piranha</td><td>$27.99</td><td class = 'longone'><p>Quantity: <input type="text" name="piranha" value="" 
+size="10" id = "piranhaquan"/></p></td><td><button class = 'button' id="Piranha"> Add </button></td>
+</tr>
+<tr>
+<td class= 'longone'>Spiney Eel</td><td>$14.99</td><td class = 'longone'><p>Quantity: <input type="text" name="spineyeel" value="" 
+size="10" id = "eelquan"/></p></td><td><button class = 'button' id="Eel"> Add </button></td>
+</tr>
+<tr>
+<td class= 'longone'>Clown Loach</td><td>$9.99</td><td class = 'longone'><p>Quantity: <input type="text" name="clownloach" value="" 
+size="10" id = "loachquan"/></p></td><td><button class = 'button' id="Clown"> Add </button></td>
+</tr>
+</table>
+<h2 class = 'shopping'>Your Shopping Cart</h2>
+<table class = "carttab" id = 'cart'>
+<h3 class = 'empty' id = "empty">Your cart is empty!</h3>
+<tr id = "first"><td class = 'second'>Fish Type</td><td class = 'second'>Price</td><td class = 'second'>Amount</td><td class = 'second'>Total</td></tr>
+<tr><td></td><td></td><td></td><td align="center"><b id = 'completetotal' ></b></td></tr>
+</table>
+<h3 class = 'discount' id = "discount"></h3>
+</body>
+</html>
